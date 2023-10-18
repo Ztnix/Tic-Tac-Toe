@@ -1,0 +1,95 @@
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-color: lightcyan;
+    margin: 0;
+}
+
+.header{
+    background-color: teal;
+    color: white;
+    padding: 8px;
+    font-size: 40px;
+    box-shadow: 5px 5px 10px gray;
+    text-align: center;
+}
+
+.header>p{
+    margin: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.mainText{
+    font-weight: bold;
+    font-size:32px;
+
+}
+
+.gridContainer{
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 450px;
+    width: 450px;
+}
+
+.gridElement{
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridElement:nth-child(3n+1){
+    border-width: 5px;
+    border-right-style: solid;
+    border-color: black;
+}
+
+.gridElement:nth-child(-n+3){
+    border-width: 5px;
+    border-bottom-style: solid;
+    border-color: black;
+}
+
+.gridElement:nth-child(3n+3){
+    border-width: 5px;
+    border-left-style: solid;
+    border-color: black;
+}
+
+.gridElement:nth-last-child(-n+3){
+    border-width: 5px;
+    border-top-style: solid;
+    border-color: black;
+}
+
+.gridElement:hover{
+    cursor: pointer;
+    background-color: rgb(240, 239, 239);
+}
+
+.resetButton{
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer{
+    background-color: rgb(1, 95, 95);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;   
+    margin-top: auto;
+}
